@@ -37,18 +37,20 @@ public sealed class MeetingManager : RoleBase, IImpostor
     )
     {
         canblocksabo = OptionCanBlockRepairSabotage.GetBool();
+        blockrepocount = OptionBlockRepoCount.GetInt();
     }
 
-    private static OptionItem OptionBlockRepoTime;
+    private static OptionItem OptionBlockRepoCount;
     private static OptionItem OptionBlockCooldown;
     private static OptionItem OptionCanBlockRepairSabotage;
     enum OptionName
     {
-        MeetingManagerBlockRepoTime,
+        MeetingManagerBlockRepoCount,
         MeetingManagerBlockCooldown,
         MeetingManagerCanBlockRepairSabotage,
     }
     private bool canblocksabo;
+    private int blockrepocount;
     private static Dictionary<byte, MeetingManager> Block = new(15);
     public List<byte> BlockedPlayer = new();
     public override void OnDestroy()
@@ -91,7 +93,7 @@ public sealed class MeetingManager : RoleBase, IImpostor
     {
         OptionBlockCooldown = FloatOptionItem.Create(RoleInfo, 10, OptionName.MeetingManagerBlockCooldown, new(2.5f, 180f, 2.5f), 15f, false)
             .SetValueFormat(OptionFormat.Seconds);
-        OptionBlockRepoTime = FloatOptionItem.Create(RoleInfo, 11, OptionName.MeetingManagerBlockRepoTime, new(2.5f, 180f, 2.5f), 15f, false)
+        OptionBlockRepoCount = IntegerOptionItem.Create(RoleInfo, 11, OptionName.MeetingManagerBlockRepoCount, new(1, 15, 1), 1, false)
             .SetValueFormat(OptionFormat.Seconds);
         OptionCanBlockRepairSabotage = BooleanOptionItem.Create(RoleInfo, 12, OptionName.MeetingManagerCanBlockRepairSabotage, true, false);
     }
@@ -105,6 +107,7 @@ public sealed class MeetingManager : RoleBase, IImpostor
         killer.SyncSettings();
         killer.SetKillCooldown();
         Main.AllPlayerKillCooldown[killer.PlayerId] = Options.DefaultKillCooldown;
+        blockrepocount--;
         killer.SyncSettings();
     }
 
@@ -120,7 +123,7 @@ public sealed class MeetingManager : RoleBase, IImpostor
     public void OnCheckMurderAsKiller(MurderInfo info)
     {
         var (killer, target) = info.AttemptTuple;
-        if (!BlockedPlayer.Contains(target.PlayerId))
+        if (!BlockedPlayer.Contains(target.PlayerId) && blockrepocount > 0)
         {
             info.DoKill = killer.CheckDoubleTrigger(target, () => { BlockMeeting(killer, target); });
         }
@@ -144,6 +147,6 @@ public sealed class MeetingManager : RoleBase, IImpostor
         return Utils.ColorString(RoleInfo.RoleColor, " Θ");
     }
 
-
+    public override string GetProgressText(bool comms = false) => Utils.ColorString(blockrepocount > 0 ? Color.red : Color.gray, $"({blockrepocount})");
 
 }

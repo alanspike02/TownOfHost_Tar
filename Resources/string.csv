@@ -211,7 +211,7 @@
 "DollMakerInfoLong","","(インポスター陣営):\nキルボタンを押すと、対象を蝋人形にすることが出来る。\n蝋人形にされると動けず、誰かとぶつかるか一定時間経つ、もしくは会議が始まると自壊する。"
 "GunslingerInfoLong","","(インポスター陣営):\n1回目のキルはキルクールが発生せず、変身のクールタイム中ならもう1キル通すことが出来る。\nただし、2キル目のキルクールは通常より増加し、2キル目を通すごとに通常キルクールも上昇していく。\n回数制限がある。"
 "CultistInfoLong","","(インポスター陣営):\nキルボタン1回押下で、対象を誘うことが出来る。\n誘われるとカルティストから見て名前横に(F)が付き、会議後、役職がフォロワーに変化する。\n設定によってはクルー以外を誘ってしまうと役職変化が起こらない。\nキルボタン2回で通常通り殺せる。"
-"MeetingManagerInfoLong","","(インポスター陣営):\nキルボタン1回押下で、対象のレポートとボタンを一定時間無効化することが出来る。\n無効化中にしたボタン、レポートは、無効化解除後に一斉に呼び出される。\n設定によってはサボタージュの解除も無効化出来る。\nキルボタン2回で通常通り殺せる。"
+"MeetingManagerInfoLong","","(インポスター陣営):\nキルボタン1回押下で、対象のボタンを永久的に無効化することが出来る。\n設定によってはサボタージュの解除も無効化出来る。\nキルボタン2回で通常通り殺せる。"
 
 "# マッドメイト系役職"
 "MadmateInfoLong","(Impostors):\nYou are a crewmate, but you act as the impostors' ally.\nYou and the impostors cannot recognize each other.\nYou can vent, and you have no tasks.","(インポスター陣営):\nクルーだがインポスターの味方をする。\nインポスターと互いに認識できない。\nベントが使え、タスクはない。","(内鬼阵营):\n叛徒伪装成船员来帮助内鬼阵营，但是他们并不知道谁是内鬼。\n叛徒不可以进行击杀或者破坏，可以跳管道且没有任务。","(狼人陣營):\n船員,但是他們屬於狼人陣營.\n狼人無法知道叛徒是誰,\n他可以跳洞且沒有任務。","(Предатель):\nЧлен Экипажа, который на стороне Предателей. \nНо он не знает кто является Предателем в игре. \nМожет использовать вентиляцию, но нет заданий.","(Impostores):\nVocê é um tripulante que se aliou ao impostor.\nOs Impostores não sabem quem você é e vice-versa.\nPode usar a ventilação, e não tem tarefas."
@@ -694,8 +694,8 @@
 "BaitreportDelayMax","BaitreportDelayMax","通報までの遅延(最大)"
 
 ##ギャンブラー##
-"GamblerMaxSaveVote","GamblerMaxSaveVote","ギャンブラーの貯めれる最大票数"
-"GamblerSaveVoteOnVote","GamblerSaveVoteOnVote","ギャンブラーが1回の自投票につき貯めれる票数"
+"GamblerMaxSaveVote","GamblerMaxSaveVote","ギャンブラーの貯められる最大票数"
+"GamblerSaveVoteOnVote","GamblerSaveVoteOnVote","ギャンブラーが1回の自投票につき貯められる票数"
 
 ##カースメーカー##
 "CurseMakerIncreaseMKillCooldown","CurseMakerIncreaseMKillCooldown","１レポート辺りの増加キルクール"
@@ -712,12 +712,7 @@
 "HexMasterCanHexCount","HexMasterCanHexCount","呪える最大数"
 "HexMasterBlockMoveTime","HexMasterBlockMoveTime","呪いキル後、動けなくなる時間"
 
-##フレーマー##
-"FramerFrameCooldown","FramerFrameCooldown","フレームのクールダウン"
-"FramerFrameMinDelay","FramerFrameMinDelay","フレームの最小遅延"
-"FramerFrameMaxDelay","FramerFrameMaxDelay","フレームの最大遅延"
-
-##ボンバー##
+##ボマー##
 "BomberBombCooldown","BomberBombCooldown","爆弾設置のクールダウン"
 "BomberCanBombCount","BomberCanBombCount","爆弾の数"
 "BomberBombDelayMin","BomberBombDelayMin","爆破の最小遅延"
@@ -741,8 +736,8 @@
 "CultistCanConvertNonCrew","CultistCanConvertNonCrew","クルー以外もフォロワーに出来る"
 
 ##ミーティングマネージャー##
-"MeetingManagerBlockCooldown","","会議無効化のクールダウン"
-"MeetingManagerBlockRepoTime","","会議を無効化出来る時間"
+"MeetingManagerBlockCooldown","","ボタン無効化のクールダウン"
+"MeetingManagerBlockRepoCount","","ボタンを無効化出来る回数"
 "MeetingManagerCanBlockRepairSabotage","","サボタージュ解除も無効化出来る"
 
 ##ギフテッド##
@@ -750,7 +745,7 @@
 "GiftedDeathInfoTask","GiftedDeathInfoTask","死因を見れるタスク数"
 "GiftedKillFlashTask","GiftedKillFlashTask","キルフラッシュを見れるタスク数"
 "GiftedIncreaseVisionTask","GiftedIncreaseVisionTask","視界が広がるタスク数"
-"GiftedRevealSelfTask","GiftedRevealSelfTask","自身の役職を公表出来るタスク数"
+"GiftedRevealSelfTask","GiftedRevealSelfTask","自身の役職を公開出来るタスク数"
 
 ##ミッショナリー##
 "MissionaryKillDelayMin","MissionaryKillDelayMin","宣教後の自決が発生するまでの最小時間"
