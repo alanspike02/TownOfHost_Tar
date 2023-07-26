@@ -30,7 +30,7 @@
 "Sniper","Sniper","スナイパー","狙击手","狙擊手","Снайпер","Sniper"
 "EvilTracker","EvilTracker","イビルトラッカー","邪恶的追踪者","邪惡的追蹤者","Злой Следопыт","Rastreador do Mal"
 "Overloader","Overloader","オーバーローダー"
-"HexMaster","HexMaster","ヘックスマスター"
+"Necromaster","Necromaster","ネクロマスター"
 "Framer","Framer","フレーマー"
 "Examiner","Examiner","エグザマイナー"
 "Bomber","Bomber","ボマー"
@@ -126,7 +126,7 @@
 "LastImpostorInfo","You are the last of us","残ったのはあなただけ","你是狼村最后的希望…","你是狼村最後的希望...","Ты последний предатель","Você é o último Impostor"
 "EvilTrackerInfo","Track others","プレイヤーを追跡しろ","让我看看，我的小目标在哪","你不要過來啊啊阿","Отслеживайте Игроков","Localize os outros"
 "OverloaderInfo","Transcend.","超越せよ"
-"HexMasterInfo","Curse a people and one day he will die.","呪いの連鎖は断ち切れない"
+"NecromasterInfo","Curse them and reap them souls.","呪いをかけて命を刈り取れ"
 "FramerInfo","Is the shadow real now?","今の影は本物?"
 "ExaminerInfo","Don't forget to examine the bodies.","死体の検査も忘れずに"
 "BomberInfo","Blow up!!!!!!!","爆破ァァァァア!!!"
@@ -205,7 +205,7 @@
 "SniperInfoLong","(Impostors):\nYou can shoot players from afar.\nYour line of fire continues as a straight line in the direction of the spot where you shapeshift to where you unshift.\nYou cannot perform normal kills until you use up all of your ammo.","(インポスター陣営):\n遠くの敵を狙撃できるインポスター。\nシェイプシフトした地点から解除した地点の延長線上の敵を一人撃ち抜く。\n撃ちきるまで通常キル出来ない。","(内鬼阵营):\n狙击手拥有远距离射杀的能力。\n方法为：变形的位置及解除变形位置的连线及其延长线上的一名玩家将被射杀。\n在狙击手的子弹耗尽前，狙击手无法进行常规击杀。","(狼人陣營):\n狙擊手\狙擊手可以進行遠程殺人\n他的子彈將從變形處延伸到取消變形處並往直線前進並殺死在這條線上非狼人陣營的人。\n在狙擊手用光子彈前,狙擊手無法正常殺人。","(Предатель):\nСнайпер может стрелять в игроков на расстоянии. \nОн убивает игрока который, находится с ним на одной линии, от точки Морфа до точки возвращения в свой облик. \nОн может совершать обычные убийства после того, как все его патроны закончатся.","(Impostor):\nVocê pode atirar em jogadores de longe.\nSua linha de fogo continua numa linha reta, do ponto que você se metamorfa ao ponto que você volta ao normal.\nVocê não pode fazer mortes normais até usar toda a sua munição."
 "EvilTrackerInfoLong","(Impostors):\nYou can see where others are.\nYou will see arrows pointing to the other impostors and anyone you shapeshift into.\nYou will see a ""kill flash"" when your fellow impostors kill.","(インポスター陣営):\n他人の位置が分かるインポスター。\n味方のインポスターとシェイプシフトで選んだ一人の位置が矢印で表示される。\n味方インポスターのキルによるキルフラッシュも見える。","(内鬼阵营):\n邪恶追踪者可以追踪其他内鬼以及其所变形的玩家。\n玩家名称下面的箭头代表着目标的方向。\n当内鬼队友杀人时，邪恶追踪者将会看到击杀闪烁提示。","(狼人陣營):\n邪惡的追蹤者:\他有一個箭頭指向他的隊友以及他變形的玩家,\n當他的隊友殺人時將出現閃光顯示。","(Предатель):\nЗлой Следопыт может отслеживать других игроков. \nОн может видеть стрелки, которые указывают на Предателей или на того, в кого он превратился. \nОн может видеть когда было совершено убийство с помощью вспышки убийства.","(Impostores):\nVocê consegue ver a posição de outros.\nÉ possível ver setas apontando para outros Impostores e qualquer um em que você se transforme.\nVocê também verá uma piscada de tela quando um aliado Impostor matar alguém."
 "OverloaderInfoLong","","(インポスター陣営):\nシェイプシフトをすると自身の名前が全員に対して赤く表示される。\nその代わりキルクールが減少し、移動速度が増加する。"
-"HexMasterInfoLong","","(インポスター陣営):\nキルボタン1回押下で、対象を呪うことが出来る。\n呪える回数を使い切った後に適当な誰かにキルボタンを押すと、呪った相手を全員殺すことが出来る。殺した後は一定時間動けなくなる。\nこのキルはキルボタンを押した人自体を殺さない。\n呪える回数が0になる前はキルボタン2回で通常通り殺せ、その時に呪った人を殺しても連鎖は起こらない。"
+"NecromasterInfoLong","","(インポスター陣営):\nキルボタン1回押下で、対象を呪うことが出来る。\n呪いの回数を使い切った後に呪ったうちの誰かをキルすると、呪った相手を全員殺すことが出来る。\n呪える回数が0になる前はキルボタン2回で通常通り殺せ、その時に呪った人を殺しても連鎖は起こらない。"
 "ExaminerInfoLong","","(インポスター陣営):\n殺した相手の役職を知ることが出来る。"
 "BomberInfoLong","","(インポスター陣営):\nキルボタン1回押下で、対象に爆弾を設置出来る。\n爆弾は多少の遅延を経て、周りを巻き込み爆発する。爆破する際、ボマーに通知が届く。\nインポスター陣営は爆破に巻き込まれないが、ボマーのみ例外で巻き込まれる。\n爆弾を使い切るまではキルボタン2回で通常通り殺せる。"
 "DollMakerInfoLong","","(インポスター陣営):\nキルボタンを押すと、対象を蝋人形にすることが出来る。\n蝋人形にされると動けず、誰かとぶつかるか一定時間経つ、もしくは会議が始まると自壊する。"
@@ -693,6 +693,8 @@
 "BaitreportDelayMin","BaitreportDelayMin","通報までの遅延(最小)"
 "BaitreportDelayMax","BaitreportDelayMax","通報までの遅延(最大)"
 
+"SnitchCanButtonAfterTask","SnitchCanButtonAfterTask","タスクを終わらせた後にボタンを使えるか"
+
 ##ギャンブラー##
 "GamblerMaxSaveVote","GamblerMaxSaveVote","ギャンブラーの貯められる最大票数"
 "GamblerSaveVoteOnVote","GamblerSaveVoteOnVote","ギャンブラーが1回の自投票につき貯められる票数"
@@ -707,10 +709,10 @@
 "OverloadLocktime","OverloadLocktime","オーバーロードが解除可能になるまでの時間"
 "Releaseoverload","Releaseoverload","オーバーロード解除時、キルクールがリセットされるか"
 
-##ヘックスマスター##
-"HexMasterHexCooldown","HexMasterHexCooldown","呪いのクールダウン"
-"HexMasterCanHexCount","HexMasterCanHexCount","呪える最大数"
-"HexMasterBlockMoveTime","HexMasterBlockMoveTime","呪いキル後、動けなくなる時間"
+##ネクロマスター##
+"NecromasterHexCooldown","NecromasterHexCooldown","呪いのクールダウン"
+"NecromasterCanHexCount","NecromasterCanHexCount","呪える最大数"
+"NecromasterHexShowEveryone","NecromasterHexShowEveryone","呪いを使い切った後、全員に呪われた人が表示される"
 
 ##ボマー##
 "BomberBombCooldown","BomberBombCooldown","爆弾設置のクールダウン"

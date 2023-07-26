@@ -391,10 +391,11 @@ public enum CustomRoles
     Bomber,
     DollMaker,
     Gunslinger,
-    HexMaster,
+    Necromaster,
     Overloader,
     Cultist,
     MeetingManager,
+    Trickster,
     //Madmate
     MadGuardian,
     Madmate,
@@ -424,6 +425,7 @@ public enum CustomRoles
     CurseMaker,
     Gambler,
     Gifted,
+    ElectronicsManager,
     //Neutral
     Arsonist,
     Egoist,
